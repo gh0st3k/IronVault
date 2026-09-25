@@ -1,0 +1,10 @@
+POST http://localhost:8080/api/customers
+Content-Type: application/json
+
+{
+  "nombre": "Juan Pérez",
+  "email": "juan@example.com"
+}
+
+### Listar customers
+GET http://localhost:8080/api/customers
