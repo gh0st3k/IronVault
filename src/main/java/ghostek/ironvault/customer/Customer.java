@@ -13,7 +13,7 @@ import java.time.ZonedDateTime;
 @Entity
 public class Customer {
     @Id
-    private Long DNI;
+    private String DNI;
 
     @Column(nullable = false)
     private String firstName;

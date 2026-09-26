@@ -2,8 +2,13 @@ POST http://localhost:8080/api/customers
 Content-Type: application/json
 
 {
-  "nombre": "Juan Pérez",
-  "email": "juan@example.com"
+  "DNI": "49269854K",
+  "firstName": "Nicolás",
+  "secondName": "Franco Souto",
+  "email": "juan@example.com",
+  "phone": "837492734",
+  "address": "Rúa Xaquín Lorenzo, 8, 1D",
+  "birthDate": "2007-12-03T10:15:30+01:00[Europe/Paris]"
 }
 
 ### Listar customers
