@@ -13,7 +13,7 @@ import java.time.ZonedDateTime;
 @Entity
 public class Customer {
     @Id
-    private String DNI;
+    private String id; // It can be DNI, NIE, Passport,...
 
     @Column(nullable = false)
     private String firstName;

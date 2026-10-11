@@ -22,7 +22,7 @@ public class CustomerService {
 
     private Customer createCustomer(CustomerCreateRequest request){
         Customer customer = new Customer();
-        customer.setDNI(request.DNI());
+        customer.setId(request.id());
         customer.setFirstName(request.firstName());
         customer.setSecondName(request.secondName());
         customer.setEmail(request.email());
@@ -34,7 +34,7 @@ public class CustomerService {
     }
 
     private CustomerCreateResponse toResponse(Customer customer){
-        return new CustomerCreateResponse(customer.getDNI(), customer.getFirstName(), customer.getSecondName(),
+        return new CustomerCreateResponse(customer.getId(), customer.getFirstName(), customer.getSecondName(),
                 customer.getEmail(), customer.getPhone(), customer.getAddress(), customer.getBirthDate());
     }
 

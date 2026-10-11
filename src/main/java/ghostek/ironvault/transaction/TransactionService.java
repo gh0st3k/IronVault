@@ -4,11 +4,8 @@ import ghostek.ironvault.transaction.dto.TransferRequest;
 import ghostek.ironvault.transaction.dto.TransferResponse;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.stereotype.Service;
 
-import java.time.Instant;
 import java.time.ZonedDateTime;
 
 @Service
