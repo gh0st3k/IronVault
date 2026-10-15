@@ -11,6 +11,7 @@ import java.time.*;
 @Getter @Setter
 @NoArgsConstructor
 @Entity
+@Table (name = "transactions")
 public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //used to create a random value for the argument ID

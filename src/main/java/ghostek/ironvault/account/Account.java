@@ -3,11 +3,13 @@ package ghostek.ironvault.account;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 import java.math.BigDecimal;
 import java.time.ZonedDateTime;
 
 @Entity
+@Table (name = "accounts")
 public class Account {
     @Id
     private Long IBAN;
