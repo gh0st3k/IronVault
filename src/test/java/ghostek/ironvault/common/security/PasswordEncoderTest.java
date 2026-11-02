@@ -31,6 +31,10 @@ class PasswordEncoderTest {
     void givenRawPassword_whenEncoded_thenArgon2idIsUsed() {
         String hash = passwordEncoder.encode("CorrectHorse42!");
 
-        assertTrue(hash.contains("$bcrypt$"), "Expected an Argon2id hash but got: " + hash);
+        System.out.println("Hash length: " + hash.length());
+
+        assertTrue(hash.contains("argon2id"), "Expected an Argon2id hash but got: " + hash);
     }
+
+
 }
